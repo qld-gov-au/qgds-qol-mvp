@@ -1,0 +1,64 @@
+<!-- QGDS Partial: card -->
+
+<div class="card h-100 {{#feature}} card-feature {{/feature}} {{classes}} {{sizes}}">
+    
+    {{! Feature }}    
+
+    {{^feature}}
+    {{! shouldn't render image if no image }}
+    {{#image}}<img src="{{image}}" class="card-img-top" alt="{{alt}}" />{{/image}}
+    
+    <div class="card-body">
+
+        {{#withdate}}
+        <p class="small">{{date}}</p>
+        {{/withdate}}
+        <h3 class="card-title"> 
+
+            {{#link}}<a href="{{link }}">{{title}}</a>{{/link}}
+            {{^link}}{{title}}{{/link}}
+        </h3>
+
+        <p class="card-text">
+            {{description}}
+        </p>
+    </div>
+
+    {{#footer}}
+    <div class="card-footer">{{footer}}</div>
+    {{/footer}}
+
+    {{/feature}}
+
+    {{! _________________________________________ }}
+
+    {{#feature}}
+        {{! shouldn't render image if no image }}
+    <div class="row g-0">
+        <div class="col-md-4">
+            {{#image}}<img src="{{image}}" class="card-img-top" alt="{{alt}}" />{{/image}}
+        </div>
+
+        <div class="col-md-8">
+            <div class="card-body">
+
+                <h3 class="card-title">
+                    {{#link}}<a href="{{link }}">{{title}}</a>{{/link}}
+                    {{^link}}{{title}}{{/link}}
+                </h3>
+
+                <p class="card-text">
+                    {{description}}
+                </p>
+            </div>
+
+            {{#footer}}
+            <div class="card-footer">{{footer}}</div>
+            {{/footer}}
+        </div>
+    </div>
+
+    {{/feature}}
+
+
+</div>

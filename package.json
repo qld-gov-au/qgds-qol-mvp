@@ -58,7 +58,7 @@
     "react-syntax-highlighter": "^15.5.0",
     "rimraf": "^5.0.5",
     "sass": "^1.70.0",
-    "storybook": "^7.6.12",
+    "storybook": "^7.6.14",
     "vite": "^5.0.12",
     "watch": "^0.13.0",
     "webpack": "^5.88.2",

@@ -1,4 +1,5 @@
 {
 	"title": "This is a callout title",
-	"content": "This is a callout description"
+	"content": "<p>This is a callout description</p>",
+	"theme": "dark"
 }

@@ -16,7 +16,10 @@
 //https://getbootstrap.com/docs/5.3/customize/color-modes/#enable-dark-mode
 
 @include color-mode(dark) {
-
+    --#{$prefix}callout-bg-color: #{$qld-sapphire-blue-shade};
+    --#{$prefix}callout-title-color: #{$qld-white};
+    --#{$prefix}callout-text-color: #{$qld-white};
+    
 }
 
 //Define component styles
@@ -42,7 +45,7 @@
         
         p, ul, ol {
             line-height: 1.5;
-            color: var(--#{$prefix}callout-text-color);    
+            color: var(--#{$prefix}callout-text-color);
         }
 
         p:last-of-type {

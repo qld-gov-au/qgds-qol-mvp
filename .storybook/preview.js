@@ -11,7 +11,7 @@ const preview = {
 		controls: {
 			matchers: {
 				color: /(background|color)$/i,
-				date: /Date$/i,
+				//date: /Date$/i,
 			},
 		},
 		html: {
@@ -35,6 +35,27 @@ const preview = {
 				},
 			},
 		},
+		backgrounds: {
+			default: 'light',
+			values: [
+			  {
+				name: 'light',
+				value: '#ffffff'
+			  },
+			  {
+				name: 'alternative',
+				value: '#e8e8e8'
+			  },
+			  {
+				name: 'dark',
+				value: '#09549f'
+			  },
+			  {
+				name: 'dark-alternative',
+				value: '#09549f'
+			  },
+			]
+		  }
 	},
 
 	decorators: [
