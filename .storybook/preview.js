@@ -27,6 +27,27 @@ const preview = {
 			},
 
 		},
+		backgrounds: {
+			default: 'Light',
+			values: [
+				{
+					name: 'Light',
+					value: 'var(--qld-white)'
+				},
+				{
+					name: 'Alternative',
+					value: 'var(--qld-light-grey-alt)'
+				},
+				{
+					name: 'Dark',
+					value: 'var(--qld-sapphire-blue)'
+				},
+				{
+					name: 'Dark alternative',
+					value: 'var(--qld-dark-blue)'
+				},
+			]
+		}
 	},
 
 	decorators: [
