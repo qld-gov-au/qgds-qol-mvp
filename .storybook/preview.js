@@ -28,11 +28,15 @@ const preview = {
 
 		},
 		backgrounds: {
-			default: 'Light',
+			default: 'Default',
 			values: [
 				{
-					name: 'Light',
+					name: 'Default',
 					value: 'var(--qld-white)'
+				},
+				{
+					name: 'Light',
+					value: 'var(--qld-light-background)'
 				},
 				{
 					name: 'Alternative',

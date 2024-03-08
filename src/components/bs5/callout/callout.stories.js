@@ -51,7 +51,28 @@ export const NoTitle = {
 };
 
 /**
- * Alternative colour Callout
+ * Light colour Callout
+ */
+export const Light = {
+  args: defaultdata.default,
+  parameters: {
+    backgrounds: {
+      default: 'Light',
+    },
+  },
+  decorators: [
+    (Story) => {
+      return `
+      <div class="light">
+          ${Story()}
+      </div>
+      `;
+    },
+  ],
+};
+
+/**
+ * Alternative light colour Callout
  */
 export const Alternative = {
   args: defaultdata.default,
@@ -63,7 +84,7 @@ export const Alternative = {
   decorators: [
     (Story) => {
       return `
-      <div class="qld-alternative">
+      <div class="alt">
           ${Story()}
       </div>
       `;
@@ -84,7 +105,7 @@ export const Dark = {
   decorators: [
     (Story) => {
       return `
-      <div class="qld-dark">
+      <div class="dark">
           ${Story()}
       </div>
       `;
@@ -105,7 +126,7 @@ export const DarkAlternative = {
   decorators: [
     (Story) => {
       return `
-      <div class="qld-dark qld-alternative">
+      <div class="dark-alt">
           ${Story()}
       </div>
       `;

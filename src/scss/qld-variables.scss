@@ -16,6 +16,8 @@ $qld-dark-background : #04498F;
 $qld-dark-text : #FFFFFF;
 $qld-dark-border : #2573C1;
 $qld-dark-blue-shade : #052C53;
+$qld-light-background: #EFF4F9;
+$qld-light-background-shade: #E5EEF5;
 
 //Hypothetical
 $cobrand-blue : #132D4E;
@@ -138,6 +140,8 @@ $project-colors: (
   "dark-text": $qld-dark-text,
   "dark-border": $qld-dark-border,
   "dark-blue-shade": $qld-dark-blue-shade,
+  "light-background": $qld-light-background,
+  "light-background-shade": $qld-light-background-shade
 );
 
 $theme-colors: map-merge($theme-colors, $project-colors);

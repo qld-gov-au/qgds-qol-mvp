@@ -10,18 +10,24 @@
     --#{$prefix}callout-text-color: #{$qld-text-grey};
     --#{$prefix}callout-spacer: 1.25rem;
 
-    .qld-alternative & {
+    .light & {
+        --#{$prefix}callout-bg-color: #{$qld-light-background-shade};
+    }
+
+    .alt & {
         --#{$prefix}callout-bg-color: #{$qld-grey};
     }
 
-    .qld-dark & {
+    .dark & {
         --#{$prefix}callout-bg-color: #{$qld-dark-background};
         --#{$prefix}callout-title-color: #{$qld-dark-text};
         --#{$prefix}callout-text-color: #{$qld-dark-text};
     }
 
-    .qld-dark.qld-alternative & {
+    .dark-alt & {
         --#{$prefix}callout-bg-color: #{$qld-dark-blue-shade};
+        --#{$prefix}callout-title-color: #{$qld-dark-text};
+        --#{$prefix}callout-text-color: #{$qld-dark-text};
     }
 }
 
