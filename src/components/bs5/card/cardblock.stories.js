@@ -1,5 +1,6 @@
 // Blockquote.stories.js
 import { Cardblock } from './Cardblock.js';
+import { Card } from './Card.js';
 import defaultdata from './cardblock.data.json';
 
 export default {
@@ -50,7 +51,7 @@ export default {
 };
 
 export const Default = {
-  args: defaultdata.cards,
+  args: defaultdata,
   parameters: {
     backgrounds: { // from .storybook > preview.js
       default: "dark",

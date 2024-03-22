@@ -1,8 +1,6 @@
 import { themes } from "@storybook/theming";
 
-import "../dist/assets/js/bootstrap.min.js";
 import "../dist/assets/css/qld.bootstrap.css";
-
 
 const preview = {
 
@@ -13,7 +11,7 @@ const preview = {
 		controls: {
 			matchers: {
 				color: /(background|color)$/i,
-				date: /Date$/i,
+				//date: /Date$/i,
 			},
 		},
 		html: {
@@ -26,7 +24,38 @@ const preview = {
 				excludeDecorators: true,
 			},
 
+			toc: {
+				contentsSelector: '.sbdocs-content',
+				headingSelector: 'h1, h2, h3',
+				ignoreSelector: '#primary',
+				title: 'Table of Contents',
+				disable: false,
+				unsafeTocbotOptions: {
+					orderedList: false,
+				},
+			},
 		},
+		backgrounds: {
+			default: 'light',
+			values: [
+			  {
+				name: 'light',
+				value: '#ffffff'
+			  },
+			  {
+				name: 'alternative',
+				value: '#e8e8e8'
+			  },
+			  {
+				name: 'dark',
+				value: '#09549f'
+			  },
+			  {
+				name: 'dark-alternative',
+				value: '#09549f'
+			  },
+			]
+		  }
 	},
 
 	decorators: [

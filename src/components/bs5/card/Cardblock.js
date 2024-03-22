@@ -1,5 +1,6 @@
 import Component from '../../../js/QGDSComponent.js'
 import template from "./cardblock.hbs?raw";
+// import Card from "./Card.js"
 
 export class Cardblock {
 
