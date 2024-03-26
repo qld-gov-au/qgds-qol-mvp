@@ -6,9 +6,11 @@
 //QLD Names Colours
 $qld-dark-blue : #05325F;
 $qld-sapphire-blue : #09549F;
+$qld-sapphire-blue-shade : #05325F;
 $qld-light-blue : #0085B3;
 $qld-light-green : #6BBE27;
 $qld-dark-green : #008635;
+$qld-darker-green : #005B23;
 $qld-golden-yellow : #FFE500;
 $qld-maroon-traditional : #771E32;
 $qld-maroon-modern : #A70240;
@@ -23,6 +25,13 @@ $qld-yellow-border: #B38800;
 $qld-dark-blue-shade : #052C53;
 $qld-light-background: #EFF4F9;
 $qld-light-background-shade: #E5EEF5;
+$qld-text-dark-blue : #04284C;
+$qld-light-blue-dark : #01B0E5;
+$qld-text-light-blue-dark : #DEEBF9;
+$qld-light-green-dark : #ADD33F;
+$qld-dark-green-dark : #78BA00;
+$qld-light-yellow : #FFEF60;
+$qld-button-dark-blue : #003E7D;
 
 //Hypothetical
 $cobrand-blue : #132D4E;
@@ -78,6 +87,8 @@ $qld-syntax-elements : #A7E5FF;
 $qld-syntax-properties : #C88DF7;
 $qld-syntax-comments : #C0D7EC;
 
+$qld-text-darkest : #121940;
+
 
 // Map colours to bootstrap theme variables
 $primary : $qld-brand-primary;
@@ -108,9 +119,11 @@ $project-colors: (
   "light-blue": $qld-light-blue,
   "light-green": $qld-light-green,
   "dark-green": $qld-dark-green,
+  "darker-green" : $qld-darker-green,
   "golden-yellow": $qld-golden-yellow,
   "system-darkest": $qld-system-darkest,
   "text-grey": $qld-text-grey,
+  "text-headings": $qld-text-headings,
   "dark-grey": $qld-dark-grey,
   "dark-grey-muted": $qld-dark-grey-muted,
   "soft-grey": $qld-soft-grey,
@@ -147,7 +160,14 @@ $project-colors: (
   "dark-border": $qld-dark-border,
   "dark-blue-shade": $qld-dark-blue-shade,
   "light-background": $qld-light-background,
-  "light-background-shade": $qld-light-background-shade
+  "light-background-shade": $qld-light-background-shade,
+  "text-dark-blue": $qld-text-dark-blue,
+  "light-blue-dark": $qld-light-blue-dark,
+  "text-light-blue-dark": $qld-text-light-blue-dark,
+  "light-green-dark": $qld-light-green-dark,
+  "dark-green-dark": $qld-dark-green-dark,
+  "light-yellow": $qld-light-yellow,
+  "button-dark-blue": $qld-button-dark-blue,
 );
 
 $theme-colors: map-merge($theme-colors, $project-colors);
