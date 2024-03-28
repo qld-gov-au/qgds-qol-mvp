@@ -41,9 +41,11 @@
 
         <div class="col-md-8">
             <div class="card-body">
-
+        {{#if withdate}}
+        <p class="small">{{date}}</p>
+        {{/if}}
                 <h3 class="card-title">
-                    {{#if link}}<a href="{{link }}" class="stretched-link">{{title}}</a>{{/if}}
+                    {{#if link}}<a href="{{link}}" class="stretched-link">{{title}}</a>{{/if}}
                     {{#unless link}}{{title}}{{/unless}}
                 </h3>
 

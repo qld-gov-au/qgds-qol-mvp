@@ -33,9 +33,6 @@
     --#{$prefix}card-footer-border: #{$qld-light-grey};
     --#{$prefix}card-border-radius: 0.75rem;
 
-    &:hover {
-        box-shadow: 7px 6px 13px rgba(0, 0, 0, 0.02), 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 13px 20px rgba(0, 0, 0, 0.1);
-    }
         //Variants
     &.card-alternative {
         --#{$prefix}card-title-color: #{$headings-color};
@@ -63,6 +60,18 @@
 
 }
 
+.card {
+    a {
+        &:hover {
+            box-shadow: 7px 6px 13px rgba(0, 0, 0, 0.02), 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 13px 20px rgba(0, 0, 0, 0.1);
+        }
+        &:focus {
+            outline: 3px solid;
+            outline-color: #{$qld-light-blue};
+            outline-offset: 2px;
+        }
+    }
+}
 
 
 @include color-mode(alternative) {
@@ -135,12 +144,6 @@
         // font-size: 400px;
         }
     }
-
-    &.card-small {
-        // font-size: 100px;
-    }
-        
-    
     .card-img-top {
         border-top-left-radius: var(--qld-card-border-radius);
         border-top-right-radius: var(--qld-card-border-radius);
@@ -173,6 +176,7 @@
 
     small {
         font-size: 0.875rem;
+        color: #{$qld-dark-grey-muted};
     }
 
 }
